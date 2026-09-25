@@ -41,7 +41,7 @@ SERVICES = [
          suits=["Shingle, tile and metal roofs with black streaks", "Roofs with moss, lichen or mildew", "Homes getting ready to sell or host guests"],
          faq=[("Will soft washing damage my roof?", "Soft washing uses low pressure rather than a high-pressure blast, which is why it is the method Magic Touch uses on shingle, tile and metal roofs."),
               ("What causes the black streaks?", "The dark streaks on Florida roofs are usually algae. Heat, humidity and shade help it grow, and soft washing treats it at the source.")],
-         pair="house-washing"),
+         pair="house-washing", photo="roof-shingle-ba"),
     dict(slug="house-washing", name="House Washing", short="Homes", chip="Soft wash",
          desc="Stucco, siding, soffits and screen enclosures cleaned with a soft wash that clears mold, mildew and dirt without forcing water where it should not go.",
          prose=["Florida humidity leaves green and black film on the north and shaded sides of a home. Magic Touch washes stucco, siding, soffits, fascia and screen enclosures with a low-pressure soft wash so the surface comes clean without damage.",
@@ -49,15 +49,15 @@ SERVICES = [
          suits=["Stucco and siding with mold or mildew", "Soffits, fascia and screen enclosures", "Homes that have not been washed in a year or more"],
          faq=[("How often should a house be washed in Florida?", "It depends on shade and buildup. Magic Touch can recommend a schedule after seeing the home during the free estimate."),
               ("Is house washing safe for screens and stucco?", "Yes. House washing uses a soft wash, a low-pressure method suited to stucco, siding and screen enclosures.")],
-         pair="roof-soft-washing"),
+         pair="roof-soft-washing", photo="siding-ba"),
     dict(slug="driveways-sidewalks", name="Driveways & Sidewalks", short="Concrete", chip="Surface cleaner",
          desc="Surface-cleaner pressure washing that lifts dirt, mildew and grime from concrete for an even, stripe-free finish.",
          prose=["Concrete driveways and sidewalks collect dirt, mildew and tire marks, and a wand alone tends to leave stripes. Magic Touch cleans flatwork with a surface cleaner for an even finish across the whole slab, then rinses the edges and curbs.",
-                "The photo on this page is a Magic Touch job: the same walkway before and after cleaning."],
+                "The photo at the top of this page is a Magic Touch driveway job, before on the left and after on the right."],
          suits=["Driveways with dirt, mildew or tire marks", "Sidewalks, walkways and entry paths", "Curbs and concrete edges"],
          faq=[("Will pressure washing leave stripes on my driveway?", "Magic Touch cleans concrete with a surface cleaner, a tool built to give flatwork an even finish."),
               ("Do I need to move my cars?", "Yes, please move vehicles off the driveway before the crew arrives so the whole slab can be cleaned.")],
-         pair="patio-pool-decks", photo="after"),
+         pair="patio-pool-decks", photo="driveway-ba"),
     dict(slug="patio-pool-decks", name="Patio & Pool Decks", short="Pool decks", chip="Pavers and concrete",
          desc="Deep cleaning for pool decks, patios and lanais. Brighter surfaces and less slippery algae underfoot.",
          prose=["Pool decks and patios stay damp, and damp concrete and pavers grow algae that turns slick underfoot. Magic Touch cleans pool decks, patios and lanais with the method that suits the surface, then rinses everything down.",
@@ -65,7 +65,7 @@ SERVICES = [
          suits=["Pool decks with green or black buildup", "Patios and lanais", "Paver and concrete surfaces"],
          faq=[("Can the pool deck and the pavers be sealed too?", "Yes. Magic Touch offers paver sealing, which can be added to a pool deck or patio cleaning on the same estimate."),
               ("Is it safe around the pool?", "Tell Magic Touch about the pool when booking, and the crew plans the clean around it.")],
-         pair="paver-sealing"),
+         pair="paver-sealing", photo="pool-deck"),
     dict(slug="paver-sealing", name="Paver Sealing", short="Pavers", chip="Clean and seal",
          desc="Pavers cleaned, re-sanded and sealed to lock the joints, deepen the color and help resist stains and weeds.",
          prose=["Sealing protects a paver driveway, patio or pool deck after it has been cleaned. Magic Touch cleans the pavers first, replaces joint sand where it has washed out, then applies sealer.",
@@ -81,7 +81,7 @@ SERVICES = [
          suits=["Gutters overflowing in heavy rain", "Downspouts clogged with leaves", "Homes getting a roof soft wash"],
          faq=[("Can gutter cleaning be done with a roof wash?", "Yes. Many homeowners book gutter cleaning together with a roof soft wash on the same visit."),
               ("How do I know my gutters are clogged?", "Water spilling over the edge in a storm, or plants growing in the gutter, are the usual signs.")],
-         pair="roof-soft-washing"),
+         pair="roof-soft-washing", photo="gutter-debris"),
     dict(slug="solar-panel-cleaning", name="Solar Panel Cleaning", short="Solar", chip="Gentle clean",
          desc="Gentle cleaning that clears dust, pollen and bird droppings so the panels stay clear.",
          prose=["Solar panels collect dust, pollen and bird droppings like any other roof surface. Magic Touch cleans panels gently so the glass is clear.",
@@ -94,9 +94,9 @@ SERVICES = [
 SVC = {s["slug"]: s for s in SERVICES}
 
 AREAS = [
-    dict(slug="orlando", name="Orlando", county="Orange County", deck="Home base. Magic Touch Pressure Washing is based in Orlando and cleans roofs, homes, driveways and pool decks across the city and its neighborhoods."),
-    dict(slug="kissimmee", name="Kissimmee", county="Osceola County", deck="Roof soft washing, house washing and concrete cleaning for Kissimmee homes, with the same flat-rate pricing and guarantees as in Orlando."),
-    dict(slug="sanford", name="Sanford", county="Seminole County", deck="North of Orlando in Seminole County. Magic Touch serves Sanford homes with every service it offers, quoted free and flat-rate."),
+    dict(slug="orlando", name="Orlando", county="Orange County", photo="house-stucco", deck="Home base. Magic Touch Pressure Washing is based in Orlando and cleans roofs, homes, driveways and pool decks across the city and its neighborhoods."),
+    dict(slug="kissimmee", name="Kissimmee", county="Osceola County", photo="driveway-clean", deck="Roof soft washing, house washing and concrete cleaning for Kissimmee homes, with the same flat-rate pricing and guarantees as in Orlando."),
+    dict(slug="sanford", name="Sanford", county="Seminole County", photo="pool-deck", deck="North of Orlando in Seminole County. Magic Touch serves Sanford homes with every service it offers, quoted free and flat-rate."),
 ]
 
 INCLUDED = [("Free, flat-rate estimate", "One price before any work starts. No hourly meter."),
@@ -143,15 +143,33 @@ def call_btn(cls="btn btn-ghost", cta="call", label="Call or text"):
     return '<a class="%s" data-cta="%s" href="tel:%s">%s%s</a>' % (cls, cta, TEL, ICON["phone"], esc(label))
 
 
-def pic(name, alt, pos="50% 55%", lazy=True):
+def pic(name, alt=None, pos=None, lazy=True):
+    w, h, dalt, dpos = IMG[name]
     ld = ' loading="lazy"' if lazy else ' fetchpriority="high"'
-    return ('<picture><source type="image/webp" srcset="%s"><img src="%s" alt="%s" width="720" height="1440" style="object-position:%s"%s decoding="async"></picture>'
-            % (a("img/%s.webp" % name), a("img/%s.jpg" % name), esc(alt), pos, ld))
+    return ('<picture><source type="image/webp" srcset="%s"><img src="%s" alt="%s" width="%d" height="%d" style="object-position:%s"%s decoding="async"></picture>'
+            % (a("img/%s.webp" % name), a("img/%s.jpg" % name), esc(dalt if alt is None else alt), w, h, pos or dpos, ld))
 
 
 def ph(name, note="Job photo coming soon"):
     return '<span class="ph" role="img" aria-label="%s, photo placeholder"><span class="ph__note">%s</span><span class="ph__name">%s</span></span>' % (esc(name), esc(note), esc(name))
 
+
+# Job photos: magictouchpressurewashing.com (before/after walkway) and the Magic Touch
+# Google Business Profile (pulled 2026-09-25). Placeholders until Trevean supplies originals.
+IMG = {
+    "driveway-ba": (1400, 1400, "Concrete driveway before and after a Magic Touch cleaning, shown side by side with the Magic Touch Pressure Washing logo", "50% 50%"),
+    "roof-shingle-ba": (1400, 1400, "Shingle roof before and after a Magic Touch soft wash, with the Magic Touch trailer parked out front", "50% 50%"),
+    "roof-tile-ba": (1400, 1400, "Tile roof on a stucco home before and after a Magic Touch cleaning", "50% 50%"),
+    "siding-ba": (1400, 1400, "Two-story home with lap siding and a metal roof before and after a Magic Touch wash", "50% 50%"),
+    "house-stucco": (1400, 1050, "Gray stucco home with clean walls after a Magic Touch house wash", "50% 50%"),
+    "pool-deck": (1221, 1400, "Screened pool deck after a Magic Touch cleaning", "50% 45%"),
+    "lanai-deck": (1400, 1050, "Covered lanai and pool deck after a Magic Touch cleaning", "50% 50%"),
+    "gutter-debris": (960, 1280, "Roof edge and gutter packed with leaves and debris before a Magic Touch gutter cleaning", "50% 50%"),
+    "brick-wall": (1400, 787, "Red brick wall after a Magic Touch pressure wash", "50% 50%"),
+    "driveway-clean": (1400, 1050, "Clean concrete driveway and home front after a Magic Touch job", "50% 60%"),
+    "before": (720, 1440, "Walkway outside a storefront before Magic Touch cleaned it, with dark wet stains on the concrete", "50% 60%"),
+    "after": (720, 1440, "The same walkway after Magic Touch cleaned it, the concrete an even light gray", "50% 60%"),
+}
 
 PHOTO_ALT = {"before": "Walkway outside a storefront before Magic Touch cleaned it, with dark wet stains on the concrete",
              "after": "The same walkway after Magic Touch cleaned it, the concrete an even light gray"}
@@ -159,7 +177,7 @@ PHOTO_ALT = {"before": "Walkway outside a storefront before Magic Touch cleaned 
 
 def media_for(s):
     if s.get("photo"):
-        return pic(s["photo"], PHOTO_ALT[s["photo"]])
+        return pic(s["photo"])
     return ph(s["name"])
 
 
@@ -195,14 +213,13 @@ def ledger(head="Included on every job"):
 </div>'''
 
 
-def wall(dur="60s", heading="Before and after, from a Magic Touch job", deck="The walkway below is a Magic Touch job. More before and after photos from Orlando homes are being added.", link=True):
-    tiles = [("pic", "before"), ("ph", SERVICES[0]["name"]), ("pic", "after"), ("ph", SERVICES[1]["name"]),
-             ("pic", "before"), ("ph", SERVICES[3]["name"]), ("pic", "after"), ("ph", SERVICES[4]["name"])]
+def wall(dur="70s", heading="Before and after, from Magic Touch jobs", deck="Roofs, siding, driveways and pool decks, all cleaned by Magic Touch Pressure Washing.", link=True):
+    tiles = [("pic", n) for n in ("driveway-ba", "roof-shingle-ba", "house-stucco", "siding-ba", "pool-deck", "roof-tile-ba", "gutter-debris", "lanai-deck", "brick-wall", "driveway-clean", "before", "after")]
 
     def tile(kind, v, hidden):
         h = ' aria-hidden="true"' if hidden else ""
         if kind == "pic":
-            return '<figure class="pw"%s>%s</figure>' % (h, pic(v, "" if hidden else PHOTO_ALT[v]))
+            return '<figure class="pw"%s>%s</figure>' % (h, pic(v, "" if hidden else None))
         return '<figure class="pw pw--ph"%s>%s</figure>' % (h, ph(v))
     track = "".join(tile(k, v, False) for k, v in tiles) + "".join(tile(k, v, True) for k, v in tiles)
     side = '<a class="text-link" href="%s">Open the gallery</a>' % u("gallery/") if link else ""
@@ -213,7 +230,7 @@ def wall(dur="60s", heading="Before and after, from a Magic Touch job", deck="Th
 
 def cta_band(h="Ready for the after photo?", p="Free, flat-rate estimates across Orlando, Kissimmee, Sanford and the surrounding area."):
     return f'''<section class="cta-band">
-  <div class="cta-band__media">{pic("after", PHOTO_ALT["after"], "50% 70%")}</div>
+  <div class="cta-band__media">{pic("driveway-clean")}</div>
   <div class="cta-band__inner"><h2>{h}</h2><p>{p}</p>{promise_line()}
     <div class="cta-row">{est_btn("Get a free estimate", "cta-band", "btn btn-primary btn-lg")}{call_btn("btn btn-ghost--light btn-lg", "cta-band-call", "Call or text " + PHONE)}<a class="btn btn-ghost--light btn-lg" href="{u("services/")}">All services</a></div>
   </div>
@@ -349,7 +366,7 @@ def hero(kicker, h1, accent, sub, media, extra="", ctas=None, label=None):
 
 
 def fact_bar():
-    facts = [("5-star", "Rated by homeowners"), ("Free", "Flat-rate estimates"), ("1 year", "Guarantee on the work"), ("On time", "On-time guarantee")]
+    facts = [("5.0", "121 Google reviews"), ("Free", "Flat-rate estimates"), ("1 year", "Guarantee on the work"), ("On time", "On-time guarantee")]
     items = "".join('<div class="fact-item"><span class="fact-item__figure">%s</span><span class="fact-item__label">%s</span></div>' % f for f in facts)
     return f'<section class="fact-bar" aria-label="Guarantees"><div class="fact-bar__inner">{items}<a class="fact-item fact-item--cta" data-cta="fact-bar" href="{u(EST)}"><span class="fact-item__figure">Estimate{ICON["arrow"]}</span><span class="fact-item__label">Free, no pressure</span></a></div></section>'
 
@@ -389,7 +406,7 @@ def book_prompt(h="Get a flat-rate price before any work starts.", p="Free estim
 
 
 def loc_grid():
-    panels = "".join(f'<a class="loc-panel reveal" href="{u("service-areas/%s/" % x["slug"])}">{ph(x["name"], x["county"])}<span class="loc-panel__body"><span class="loc-panel__name">{x["name"]}</span><span class="loc-panel__deck">{esc(x["deck"])}</span><span class="text-link">Pressure washing in {x["name"]}</span></span></a>' for x in AREAS)
+    panels = "".join(f'<a class="loc-panel reveal" href="{u("service-areas/%s/" % x["slug"])}">{pic(x["photo"], "")}<span class="loc-panel__body"><span class="loc-panel__name">{x["name"]}</span><span class="loc-panel__deck">{esc(x["deck"])}</span><span class="text-link">Pressure washing in {x["name"]}</span></span></a>' for x in AREAS)
     return f'<div class="loc-grid loc-grid--3">{panels}</div>'
 
 
@@ -404,10 +421,11 @@ def page_home():
            ("Pool and patio owners", "Pool decks, patios and lanais that have turned green or slick."),
            ("Paver owners", "Paver driveways and patios that need cleaning, new joint sand and a seal."),
            ("Solar owners", "Rooftop panels coated in dust, pollen or bird droppings.")]
-    who_html = "".join(f'<div class="who-item reveal"><div class="who-item__media">{ph(t, "Photo coming soon")}</div><div class="who-item__body"><span class="who-item__num">0{i+1}</span><h3>{t}</h3><p>{d}</p></div></div>' for i, (t, d) in enumerate(who))
+    who_pics = ["house-stucco", "lanai-deck", None, None]
+    who_html = "".join(f'<div class="who-item reveal"><div class="who-item__media">{pic(who_pics[i]) if who_pics[i] else ph(t, "Photo coming soon")}</div><div class="who-item__body"><span class="who-item__num">0{i+1}</span><h3>{t}</h3><p>{d}</p></div></div>' for i, (t, d) in enumerate(who))
     return hero("Licensed and insured &middot; Orlando, Florida", "Pressure washing in Orlando.", "Flat-rate and on time.",
                 "Magic Touch Pressure Washing is a family-owned exterior cleaning company run by Trevean McLeod. Roofs, homes, driveways and pool decks across Orlando, Kissimmee and Sanford.",
-                ba_slider(), promise_line(), label="Pressure washing in Orlando") + fact_bar() + wall() + f'''
+                pic("driveway-ba", lazy=False), promise_line(), label="Pressure washing in Orlando") + fact_bar() + wall() + f'''
 <section class="section section--sand-deep" id="services"><div class="container">
 <div class="section-head"><h2>Soft wash up top. Surface clean below.</h2><div class="section-head__side"><p class="deck">Roofs get a low-pressure soft wash. Concrete gets a surface cleaner for an even finish. Every job is quoted free and flat-rate.</p><a class="text-link" href="{u("services/")}">Every service</a></div></div>
 <div class="trip-grid">{svc_card(SVC["roof-soft-washing"])}{svc_card(SVC["driveways-sidewalks"])}</div>
@@ -426,7 +444,7 @@ def page_home():
 {book_prompt()}
 
 <section class="section section--navy"><div class="container"><div class="captain-split">
-  <div class="captain-split__media reveal">{ph("Trevean McLeod", "Owner photo coming soon")}</div>
+  <div class="captain-split__media reveal">{pic("roof-shingle-ba")}</div>
   <div class="captain-split__body">
     <h2>Family-owned and run by Trevean McLeod</h2>
     <p class="deck">Magic Touch Mobile Pressure Washing LLC was incorporated in Orlando in October 2020 by Trevean J. McLeod.</p>
@@ -488,7 +506,7 @@ def page_service(s):
     faqs = s["faq"] + [FAQ_HOME[0], FAQ_HOME[5]]
     ctas = est_btn("Get a free estimate", "hero", "btn btn-primary btn-lg") + '<a class="btn btn-ghost--light btn-lg" href="#details">Service details</a>'
     extra = '<p class="hero__price"><span class="amt">Free</span><span>flat-rate estimate<br>1-year guarantee</span></p>'
-    media = ba_slider() if s.get("photo") else ph(s["name"])
+    media = pic(s["photo"], lazy=False) if s.get("photo") else ph(s["name"])
     return hero("%s &middot; Orlando, Kissimmee and Sanford" % esc(s["chip"]), esc(s["name"]), "", esc(s["desc"]), media, extra, ctas) + f'''
 <section class="section" id="details"><div class="container"><div class="tour-layout">
   <div class="prose">
@@ -502,7 +520,7 @@ def page_service(s):
   {booking_panel(s["name"])}
 </div></div></section>
 <section class="section section--sand-deep"><div class="container"><div class="section-head"><h2>Included with {esc(s["name"].lower())}</h2></div>{ledger()}</div></section>
-{wall("45s", "From Magic Touch jobs", "A real Magic Touch walkway, before and after. More job photos are being added.")}
+{wall("60s", "From Magic Touch jobs")}
 <section class="section"><div class="container container--narrow"><div class="section-head"><h2>Before you book</h2></div>{acc(faqs, "tf")}</div></section>
 <section class="section section--navy"><div class="container"><div class="captain-split">
   <div class="captain-split__media reveal">{media_for(pair)}</div>
@@ -530,7 +548,7 @@ def page_areas():
 def page_area(x):
     others = [o for o in AREAS if o is not x]
     rows = "".join('<a class="species-row" href="%s"><span class="species-row__name">%s in %s</span><span class="species-row__go">%s</span></a>' % (u("services/%s/" % s["slug"]), esc(s["name"]), x["name"], ICON["arrow"]) for s in SERVICES)
-    return hero("%s &middot; Central Florida" % x["county"], "Pressure washing in %s" % x["name"], "", esc(x["deck"]), ph(x["name"], x["county"]), promise_line()) + f'''
+    return hero("%s &middot; Central Florida" % x["county"], "Pressure washing in %s" % x["name"], "", esc(x["deck"]), pic(x["photo"], "", lazy=False), promise_line()) + f'''
 <section class="section"><div class="container"><div class="tour-layout">
   <div class="prose">
     <h2>Exterior cleaning for {x["name"]} homes</h2>
@@ -548,7 +566,7 @@ def page_area(x):
 
 
 def page_about():
-    return hero("Family-owned &middot; Orlando since 2020", "About Magic Touch", "", "Magic Touch Pressure Washing is a family-owned exterior cleaning company in Orlando, run by Trevean J. McLeod.", ph("Trevean McLeod", "Owner photo coming soon")) + f'''
+    return hero("Family-owned &middot; Orlando since 2020", "About Magic Touch", "", "Magic Touch Pressure Washing is a family-owned exterior cleaning company in Orlando, run by Trevean J. McLeod.", pic("roof-shingle-ba", lazy=False)) + f'''
 <section class="section"><div class="container"><div class="tour-layout">
   <div class="prose">
     <h2>A family business built on three promises</h2>
@@ -558,14 +576,16 @@ def page_about():
   </div>
   {booking_panel("Magic Touch")}
 </div></div></section>
-{wall("45s", "The work", "A real Magic Touch walkway, before and after. More job photos are being added.")}
+{wall("60s", "The work")}
 ''' + cta_band("Put Magic Touch on the calendar")
 
 
 def page_gallery():
-    figs = "".join('<figure>%s<figcaption>%s</figcaption></figure>' % (pic(n, PHOTO_ALT[n]), t) for n, t in (("before", "Before"), ("after", "After")))
-    figs += "".join('<figure>%s</figure>' % ph(s["name"]) for s in SERVICES)
-    return f'''<section class="page-hero"><div class="container"><h1>Gallery</h1><p class="deck">Before and after photos from Magic Touch jobs. The walkway below is a real Magic Touch job; photos for each service are being added.</p></div></section>
+    items = [("driveway-ba", "Driveway"), ("roof-shingle-ba", "Shingle roof"), ("roof-tile-ba", "Tile roof"), ("siding-ba", "Siding"), ("house-stucco", "House wash"),
+             ("pool-deck", "Pool deck"), ("lanai-deck", "Lanai"), ("gutter-debris", "Gutters, before"), ("brick-wall", "Brick wall"), ("driveway-clean", "Driveway"),
+             ("before", "Walkway, before"), ("after", "Walkway, after")]
+    figs = "".join('<figure>%s<figcaption>%s</figcaption></figure>' % (pic(n), t) for n, t in items)
+    return f'''<section class="page-hero"><div class="container"><h1>Gallery</h1><p class="deck">Before and after photos from Magic Touch Pressure Washing jobs: roofs, siding, driveways, pool decks and more.</p></div></section>
 <section class="section section--tight-top"><div class="container"><div class="gal-grid">{figs}</div>
 <div class="cta-row cta-row--center mt-6"><a class="btn btn-ghost" href="{IG}" rel="noopener">{ICON["ig"]}More on Instagram</a></div></div></section>
 ''' + cta_band("Your home is the next after photo")

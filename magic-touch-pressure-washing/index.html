@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Magic Touch Pressure Washing | Orlando, Kissimmee &amp; Sanford Exterior Cleaning</title>
+<meta name="description" content="Roof soft washing, house washing, driveway, patio and pool deck cleaning, paver sealing and gutter cleaning in Orlando, Kissimmee and Sanford. Licensed, insured, family owned. Free estimates: (321) 355-9521.">
+<meta property="og:title" content="Magic Touch Pressure Washing: a website preview built for you">
+<meta property="og:description" content="Orlando's roof, house and concrete cleaning pros. Licensed, insured, family owned.">
+<meta property="og:image" content="./thumb.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Brand colours: swap these tokens to match the Magic Touch logo exactly */
+:root{
+  --navy:#0a1a33;      /* primary dark */
+  --navy-2:#10284d;
+  --blue:#1a8cff;      /* primary brand blue */
+  --aqua:#35d0ff;      /* water / highlight */
+  --gold:#ffc53d;      /* stars + accent */
+  --ink:#0d1b2e;
+  --muted:#5a6b82;
+  --line:#e3e9f2;
+  --bg:#f5f8fc;
+  --card:#ffffff;
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 Inter,system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:Archivo,Inter,sans-serif;letter-spacing:-.02em;margin:0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.eyebrow::before{content:"";width:26px;height:2px;background:currentColor;border-radius:2px}
+.sec{padding:96px 0}
+.sec-head{max-width:720px;margin:0 0 48px}
+.sec-head h2{font-size:clamp(32px,4.4vw,48px);line-height:1.05;margin:14px 0 14px;font-weight:800}
+.sec-head p{color:var(--muted);font-size:18px;margin:0}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+.center .eyebrow::after{content:"";width:26px;height:2px;background:currentColor;border-radius:2px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 16px/1 Inter,sans-serif;padding:17px 26px;border-radius:12px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,var(--blue),#0b6fe0);color:#fff;box-shadow:0 10px 26px -8px rgba(26,140,255,.7)}
+.btn-primary:hover{box-shadow:0 14px 32px -8px rgba(26,140,255,.85)}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.06)}
+.btn-ghost:hover{background:rgba(255,255,255,.14)}
+.btn-dark{background:var(--navy);color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* Top bar */
+.topbar{background:var(--navy);color:#c9d6ea;font-size:13.5px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:9px;padding-bottom:9px}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.topbar .tb-left{display:flex;gap:22px;flex-wrap:wrap}
+.topbar .tb-left span{display:inline-flex;align-items:center;gap:7px}
+.topbar svg{width:14px;height:14px;color:var(--aqua)}
+@media(max-width:760px){.topbar .tb-left{display:none}.topbar .wrap{justify-content:center}}
+
+/* Header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:78px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{width:46px;height:46px;border-radius:13px;background:linear-gradient(140deg,var(--blue),var(--navy));display:grid;place-items:center;box-shadow:0 6px 16px -6px rgba(10,26,51,.6)}
+.brand-mark svg{width:26px;height:26px}
+.brand-text{line-height:1.05}
+.brand-text b{display:block;font:900 20px Archivo,sans-serif;letter-spacing:-.02em;color:var(--navy)}
+.brand-text small{font:700 10.5px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--blue)}
+.menu{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.menu a{text-decoration:none;font-weight:600;font-size:15px;color:var(--ink);opacity:.82;transition:opacity .15s,color .15s}
+.menu a:hover{opacity:1;color:var(--blue)}
+.nav-cta{display:flex;align-items:center;gap:12px}
+.nav-phone{display:flex;flex-direction:column;align-items:flex-end;text-decoration:none;line-height:1.15}
+.nav-phone small{font-size:11.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.nav-phone b{font:800 18px Archivo,sans-serif;color:var(--navy)}
+.nav-cta .btn{padding:13px 20px;font-size:15px}
+.burger{display:none;background:none;border:0;padding:8px;cursor:pointer;color:var(--navy)}
+.burger svg{width:28px;height:28px}
+@media(max-width:1020px){.menu,.nav-phone{display:none}.burger{display:block}}
+@media(max-width:520px){.nav-cta .btn{display:none}}
+.mobile-menu{display:none;border-top:1px solid var(--line);background:#fff}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:15px 24px;border-bottom:1px solid var(--line);text-decoration:none;font-weight:600}
+.mobile-menu .btn{margin:16px 24px;display:flex}
+
+/* Hero */
+.hero{position:relative;background:radial-gradient(1100px 600px at 85% -10%,rgba(53,208,255,.22),transparent 60%),radial-gradient(900px 500px at -10% 110%,rgba(26,140,255,.25),transparent 60%),linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:22px 22px;mask-image:linear-gradient(to bottom,#000,transparent 80%);pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding-top:84px;padding-bottom:96px}
+@media(max-width:960px){.hero-grid{grid-template-columns:1fr;gap:44px;padding-top:48px;padding-bottom:72px}}
+.rating-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:8px 14px 8px 10px;border-radius:999px;font-size:14px;font-weight:600}
+.stars{display:inline-flex;gap:2px;color:var(--gold)}
+.stars svg{width:16px;height:16px}
+.hero h1{font-size:clamp(40px,6.2vw,72px);line-height:.98;font-weight:900;margin:22px 0 22px}
+.hero h1 .glow{background:linear-gradient(90deg,var(--aqua),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{font-size:clamp(17px,1.6vw,20px);color:#c9d6ea;max-width:560px;margin:0 0 32px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.hero-checks{display:flex;flex-wrap:wrap;gap:12px 22px;list-style:none;padding:0;margin:0;font-weight:600;font-size:15px;color:#e5edf8}
+.hero-checks li{display:flex;align-items:center;gap:8px}
+.hero-checks svg{width:20px;height:20px;color:var(--aqua);flex:none}
+
+/* Before / after */
+.ba-card{position:relative;border-radius:24px;padding:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.ba{position:relative;aspect-ratio:4/3.3;border-radius:16px;overflow:hidden;user-select:none;touch-action:pan-y;background:#c9ccd0}
+.ba-layer{position:absolute;inset:0}
+.ba-clean{background:
+  linear-gradient(90deg,transparent 49.6%,rgba(0,0,0,.14) 49.6%,rgba(0,0,0,.14) 50.4%,transparent 50.4%) 0 0/50% 100%,
+  linear-gradient(0deg,transparent 49.6%,rgba(0,0,0,.14) 49.6%,rgba(0,0,0,.14) 50.4%,transparent 50.4%) 0 0/100% 33.4%,
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E"),
+  linear-gradient(160deg,#eef0f2,#d9dde2)}
+.ba-dirty{clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0);background:
+  linear-gradient(90deg,transparent 49.6%,rgba(0,0,0,.28) 49.6%,rgba(0,0,0,.28) 50.4%,transparent 50.4%) 0 0/50% 100%,
+  linear-gradient(0deg,transparent 49.6%,rgba(0,0,0,.28) 49.6%,rgba(0,0,0,.28) 50.4%,transparent 50.4%) 0 0/100% 33.4%,
+  radial-gradient(40% 30% at 20% 30%,rgba(40,48,22,.75),transparent 70%),
+  radial-gradient(35% 28% at 75% 70%,rgba(34,40,20,.8),transparent 70%),
+  radial-gradient(30% 22% at 60% 20%,rgba(70,62,38,.6),transparent 70%),
+  radial-gradient(28% 30% at 30% 85%,rgba(55,52,30,.7),transparent 70%),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='d'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.035' numOctaves='4' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .2 0 0 0 0 .22 0 0 0 0 .1 0 0 0 1.4 -.35'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23d)'/%3E%3C/svg%3E"),
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .3 0 0 0 0 .25 0 0 0 .35 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E"),
+  linear-gradient(160deg,#8b8a78,#6a6a58)}
+.ba-tag{position:absolute;top:14px;padding:6px 12px;border-radius:999px;font:800 11.5px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;z-index:3}
+.ba-tag.before{left:14px;background:rgba(10,26,51,.82);color:#fff}
+.ba-tag.after{right:14px;background:#fff;color:var(--navy)}
+.ba-handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:3px;margin-left:-1.5px;background:#fff;z-index:2;box-shadow:0 0 18px rgba(53,208,255,.9);pointer-events:none}
+.ba-handle span{position:absolute;top:50%;left:50%;width:50px;height:50px;margin:-25px 0 0 -25px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.ba-handle svg{width:24px;height:24px;color:var(--blue)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:4;margin:0}
+.ba-caption{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 6px 2px;font-size:14px;color:#c9d6ea}
+.ba-caption b{color:#fff}
+.float-badge{position:absolute;left:-26px;bottom:44px;z-index:5;background:#fff;color:var(--navy);border-radius:16px;padding:14px 18px;display:flex;align-items:center;gap:12px;box-shadow:0 20px 40px -12px rgba(0,0,0,.45)}
+.float-badge .ic{width:42px;height:42px;border-radius:12px;background:linear-gradient(140deg,var(--aqua),var(--blue));display:grid;place-items:center;color:#fff}
+.float-badge .ic svg{width:22px;height:22px}
+.float-badge b{display:block;font:800 16px Archivo,sans-serif}
+.float-badge small{color:var(--muted);font-weight:600;font-size:12.5px}
+@media(max-width:960px){.float-badge{left:12px;bottom:66px}}
+
+/* Trust strip */
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{display:flex;align-items:center;gap:14px;padding:28px 22px;border-right:1px solid var(--line)}
+.trust-item:last-child{border-right:0}
+.trust-item .ic{width:48px;height:48px;border-radius:14px;background:#eaf4ff;color:var(--blue);display:grid;place-items:center;flex:none}
+.trust-item .ic svg{width:24px;height:24px}
+.trust-item b{display:block;font:800 17px Archivo,sans-serif;color:var(--navy)}
+.trust-item small{color:var(--muted);font-size:14px}
+@media(max-width:900px){.trust-grid{grid-template-columns:1fr 1fr}.trust-item:nth-child(2){border-right:0}.trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media(max-width:520px){.trust-grid{grid-template-columns:1fr}.trust-item{border-right:0;border-bottom:1px solid var(--line)}.trust-item:last-child{border-bottom:0}}
+
+/* Services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:960px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.svc-grid{grid-template-columns:1fr}}
+.svc{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease,border-color .2s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 24px 50px -24px rgba(10,26,51,.35);border-color:#cfe2fb}
+.svc-top{height:150px;position:relative;display:grid;place-items:center;overflow:hidden}
+.svc-top::before{content:"";position:absolute;inset:0;background:var(--g)}
+.svc-top::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1px);background-size:16px 16px}
+.svc-top svg{position:relative;z-index:1;width:64px;height:64px;color:#fff;filter:drop-shadow(0 8px 14px rgba(0,0,0,.25))}
+.svc-top .tag{position:absolute;z-index:1;top:14px;left:14px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);color:#fff;font:700 11px Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.svc-body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.svc h3{font-size:22px;font-weight:800;margin-bottom:8px;color:var(--navy)}
+.svc p{color:var(--muted);margin:0 0 18px;font-size:15.5px}
+.svc ul{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:8px;font-size:14.5px;font-weight:500}
+.svc li{display:flex;gap:9px;align-items:flex-start}
+.svc li svg{width:18px;height:18px;color:var(--blue);flex:none;margin-top:2px}
+.svc .more{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--blue);text-decoration:none}
+.svc .more svg{width:16px;height:16px;transition:transform .15s}
+.svc:hover .more svg{transform:translateX(4px)}
+
+/* Split feature (why us) */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+@media(max-width:960px){.split{grid-template-columns:1fr;gap:40px}}
+.why-visual{position:relative;border-radius:24px;background:linear-gradient(150deg,var(--navy),var(--navy-2));padding:40px;color:#fff;overflow:hidden;min-height:440px;display:flex;flex-direction:column;justify-content:flex-end}
+.why-visual::before{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(53,208,255,.45),transparent 65%)}
+.why-visual .drops{position:absolute;top:36px;right:36px;display:grid;grid-template-columns:repeat(3,14px);gap:12px;opacity:.5}
+.why-visual .drops i{width:14px;height:18px;background:var(--aqua);border-radius:50% 50% 50% 50%/60% 60% 40% 40%;transform:rotate(180deg)}
+.big-num{font:900 clamp(80px,11vw,132px)/.9 Archivo,sans-serif;letter-spacing:-.04em;background:linear-gradient(180deg,#fff,#9fd9ff);-webkit-background-clip:text;background-clip:text;color:transparent;position:relative}
+.why-visual p{position:relative;font-size:18px;color:#c9d6ea;margin:10px 0 28px;max-width:360px}
+.why-stats{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.why-stats div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:16px}
+.why-stats b{display:block;font:800 26px Archivo,sans-serif}
+.why-stats small{color:#c9d6ea;font-size:13.5px}
+.feat-list{display:grid;gap:22px;margin-top:8px}
+.feat{display:flex;gap:18px}
+.feat .ic{width:52px;height:52px;border-radius:14px;background:#eaf4ff;color:var(--blue);display:grid;place-items:center;flex:none}
+.feat .ic svg{width:26px;height:26px}
+.feat h3{font-size:19px;font-weight:800;color:var(--navy);margin-bottom:4px}
+.feat p{margin:0;color:var(--muted);font-size:15.5px}
+
+/* Process */
+.process{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+.step{position:relative;padding:32px 28px;border-radius:var(--radius);background:var(--bg);border:1px solid var(--line)}
+.step::before{counter-increment:s;content:"0" counter(s);font:900 54px/1 Archivo,sans-serif;color:transparent;-webkit-text-stroke:1.5px #b9d3f3;display:block;margin-bottom:16px}
+.step h3{font-size:21px;font-weight:800;color:var(--navy);margin-bottom:8px}
+.step p{margin:0;color:var(--muted)}
+
+/* Owner */
+.owner-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:14px;box-shadow:0 30px 60px -36px rgba(10,26,51,.4)}
+.owner-photo{aspect-ratio:4/4.3;border-radius:16px;background:linear-gradient(160deg,#dbeafe,#bfdbfe);position:relative;overflow:hidden;display:grid;place-items:center}
+.owner-photo .ph{display:flex;flex-direction:column;align-items:center;gap:10px;color:#4b6a94;font-weight:600;font-size:14px;text-align:center;padding:20px}
+.owner-photo .ph svg{width:72px;height:72px;opacity:.6}
+.owner-sig{display:flex;justify-content:space-between;align-items:center;padding:18px 10px 8px}
+.owner-sig b{display:block;font:800 19px Archivo,sans-serif;color:var(--navy)}
+.owner-sig small{color:var(--muted);font-weight:600}
+.owner-sig .stars svg{width:18px;height:18px}
+.quote-block{font:700 clamp(22px,2.4vw,28px)/1.3 Archivo,sans-serif;color:var(--navy);margin:0 0 22px;letter-spacing:-.01em}
+.body-copy p{color:var(--muted);font-size:17px;margin:0 0 16px}
+.pill-row{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 30px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:600;font-size:14px}
+.pill svg{width:16px;height:16px;color:var(--blue)}
+
+/* Reviews */
+.reviews{background:linear-gradient(160deg,var(--navy),var(--navy-2));color:#fff;position:relative;overflow:hidden}
+.reviews::before{content:"";position:absolute;left:-200px;bottom:-200px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(26,140,255,.35),transparent 65%)}
+.reviews .sec-head p{color:#c9d6ea}
+.reviews .eyebrow{color:var(--aqua)}
+.rev-grid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:960px){.rev-grid{grid-template-columns:1fr}}
+.rev{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:var(--radius);padding:30px 28px;display:flex;flex-direction:column}
+.rev .stars{margin-bottom:18px}
+.rev .stars svg{width:18px;height:18px}
+.rev blockquote{margin:0 0 24px;font-size:17px;line-height:1.6;color:#eaf1fb}
+.rev footer{margin-top:auto;display:flex;align-items:center;gap:12px;font-size:14px;color:#c9d6ea}
+.rev .av{width:42px;height:42px;border-radius:50%;background:linear-gradient(140deg,var(--aqua),var(--blue));display:grid;place-items:center;font:800 15px Archivo,sans-serif;color:#fff}
+.rev footer b{display:block;color:#fff;font-size:15px}
+.rev-summary{position:relative;display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:40px;padding:22px 26px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13)}
+.rev-summary b{font:900 34px Archivo,sans-serif}
+.rev-summary .stars svg{width:22px;height:22px}
+.rev-summary span{color:#c9d6ea}
+.rev-summary .btn{margin-left:auto}
+@media(max-width:640px){.rev-summary .btn{margin-left:0;width:100%}}
+
+/* Areas */
+.areas-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:stretch}
+@media(max-width:900px){.areas-grid{grid-template-columns:1fr}}
+.area-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:520px){.area-cards{grid-template-columns:1fr}}
+.area{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:flex;align-items:center;gap:14px;font-weight:700;color:var(--navy)}
+.area svg{width:22px;height:22px;color:var(--blue);flex:none}
+.area small{display:block;font-weight:500;color:var(--muted);font-size:13.5px}
+.area.main{grid-column:1/-1;background:linear-gradient(135deg,var(--blue),#0b6fe0);color:#fff;border:0}
+.area.main svg,.area.main small{color:#dbeeff}
+.map-card{position:relative;border-radius:22px;overflow:hidden;background:linear-gradient(160deg,#e3f0ff,#cfe4ff);min-height:340px;border:1px solid var(--line)}
+.map-card svg{position:absolute;inset:0;width:100%;height:100%}
+.map-card .label{position:absolute;left:20px;bottom:20px;right:20px;background:#fff;border-radius:14px;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;box-shadow:0 14px 30px -14px rgba(10,26,51,.4)}
+.map-card .label b{color:var(--navy);font:800 16px Archivo,sans-serif;display:block}
+.map-card .label small{color:var(--muted)}
+.map-card .label a{font-weight:700;color:var(--blue);text-decoration:none;white-space:nowrap}
+
+/* FAQ */
+.faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px}
+@media(max-width:900px){.faq-wrap{grid-template-columns:1fr;gap:28px}}
+.faq{display:grid;gap:12px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:0 22px;transition:border-color .2s,box-shadow .2s}
+.faq details[open]{border-color:#bcd7f7;box-shadow:0 16px 36px -24px rgba(10,26,51,.4)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font:700 17px Inter,sans-serif;color:var(--navy)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{width:30px;height:30px;border-radius:50%;background:#eaf4ff;color:var(--blue);display:grid;place-items:center;flex:none;transition:transform .2s}
+.faq summary .pm svg{width:16px;height:16px}
+.faq details[open] .pm{transform:rotate(45deg);background:var(--blue);color:#fff}
+.faq details p{margin:0 0 20px;color:var(--muted)}
+.faq-aside{background:var(--navy);color:#fff;border-radius:22px;padding:34px;align-self:start;position:sticky;top:110px}
+.faq-aside h3{font-size:26px;font-weight:800;margin:12px 0 10px}
+.faq-aside p{color:#c9d6ea;margin:0 0 24px}
+.faq-aside .eyebrow{color:var(--aqua)}
+.faq-aside .btn{width:100%;margin-bottom:12px}
+@media(max-width:900px){.faq-aside{position:static}}
+
+/* Quote */
+.quote{background:#fff;border-top:1px solid var(--line)}
+.quote-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+@media(max-width:960px){.quote-grid{grid-template-columns:1fr;gap:36px}}
+.contact-list{display:grid;gap:14px;margin-top:28px}
+.contact-list a,.contact-list div{display:flex;gap:16px;align-items:center;padding:18px 20px;border:1px solid var(--line);border-radius:14px;text-decoration:none;background:var(--bg)}
+.contact-list .ic{width:46px;height:46px;border-radius:12px;background:var(--navy);color:#fff;display:grid;place-items:center;flex:none}
+.contact-list .ic svg{width:22px;height:22px}
+.contact-list small{display:block;color:var(--muted);font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.08em}
+.contact-list b{font:800 18px Archivo,sans-serif;color:var(--navy);word-break:break-word}
+form.qf{background:var(--bg);border:1px solid var(--line);border-radius:22px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:600px){form.qf{grid-template-columns:1fr;padding:24px}}
+.qf h3{grid-column:1/-1;font-size:26px;font-weight:800;color:var(--navy)}
+.qf .sub{grid-column:1/-1;margin:-8px 0 6px;color:var(--muted)}
+.qf label{display:grid;gap:7px;font-weight:600;font-size:14px;color:var(--navy)}
+.qf .full{grid-column:1/-1}
+.qf input,.qf select,.qf textarea{font:500 16px Inter,sans-serif;padding:14px 15px;border-radius:11px;border:1.5px solid #d4deeb;background:#fff;color:var(--ink);width:100%;transition:border-color .15s,box-shadow .15s}
+.qf input:focus,.qf select:focus,.qf textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 4px rgba(26,140,255,.15)}
+.qf textarea{min-height:110px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chips label{display:inline-flex;align-items:center;gap:0;cursor:pointer}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips span{padding:9px 14px;border-radius:999px;border:1.5px solid #d4deeb;background:#fff;font-weight:600;font-size:14px;transition:all .15s}
+.chips input:checked+span{background:var(--blue);border-color:var(--blue);color:#fff}
+.chips input:focus-visible+span{box-shadow:0 0 0 4px rgba(26,140,255,.25)}
+.qf .btn{grid-column:1/-1;width:100%;padding:18px}
+.qf .fine{grid-column:1/-1;margin:0;text-align:center;color:var(--muted);font-size:13.5px}
+.qf-done{grid-column:1/-1;display:none;padding:14px 16px;border-radius:12px;background:#e8f7ee;color:#136c3b;font-weight:600}
+
+/* CTA band */
+.cta-band{background:linear-gradient(120deg,var(--blue),#0b6fe0 55%,var(--navy));color:#fff;position:relative;overflow:hidden}
+.cta-band::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.12) 1px,transparent 1px);background-size:20px 20px;mask-image:linear-gradient(90deg,transparent,#000)}
+.cta-band .wrap{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:28px;padding-top:64px;padding-bottom:64px;flex-wrap:wrap}
+.cta-band h2{font-size:clamp(30px,4vw,44px);font-weight:900;line-height:1.05;max-width:640px}
+.cta-band p{margin:10px 0 0;color:#dbeeff;font-size:18px}
+.cta-band .btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-white{background:#fff;color:var(--navy)}
+
+/* Footer */
+footer.site{background:#06111f;color:#9fb0c8;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px;padding-top:72px;padding-bottom:48px}
+@media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.foot-grid{grid-template-columns:1fr}}
+.foot-grid h4{color:#fff;font:800 15px Archivo,sans-serif;letter-spacing:.04em;text-transform:uppercase;margin:0 0 18px}
+.foot-grid ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.foot-grid a{text-decoration:none;color:#9fb0c8}
+.foot-grid a:hover{color:#fff}
+.foot-brand .brand-text b{color:#fff}
+.foot-brand p{margin:18px 0 20px;max-width:320px}
+.socials{display:flex;gap:10px}
+.socials a{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.07);display:grid;place-items:center;color:#fff}
+.socials a:hover{background:var(--blue)}
+.socials svg{width:18px;height:18px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13.5px}
+
+/* Mobile sticky call bar */
+.mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px;box-shadow:0 -10px 30px -12px rgba(10,26,51,.25)}
+.mbar .btn{flex:1;padding:15px 12px;font-size:15px}
+@media(max-width:760px){.mbar{display:flex}body{padding-bottom:78px}}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.btn,.svc{transition:none}}
+</style>
+</head>
+<body>
+
+<!-- SVG sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.5 1.3 6.6L12 17.2 6.1 20.5l1.3-6.6L2.5 9.4l6.6-.8z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.2 4.2L19 7"/></symbol>
+  <symbol id="i-check-c" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".18"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M7.5 12.5l3 3 6-6.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.9-.9L3 20l1.1-4.2A8.4 8.4 0 0 1 3 11.5 8.5 8.5 0 0 1 12 3a8.5 8.5 0 0 1 9 8.5z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm-1 1l9 7 9-7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-3.6 8-10V5l-8-3-8 3v7c0 6.4 8 10 8 10z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-roof" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 12L12 4l10 8M5 10v10h14V10M9 20v-5h6v5"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16 3v3"/></symbol>
+  <symbol id="i-drive" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 3L3 21M16 3l5 18M12 5v2M12 11v2M12 17v2"/></symbol>
+  <symbol id="i-pool" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 18c1.7 0 1.7-1.2 3.3-1.2S7 18 8.7 18s1.6-1.2 3.3-1.2 1.6 1.2 3.3 1.2 1.7-1.2 3.4-1.2S20.3 18 22 18M2 22c1.7 0 1.7-1.2 3.3-1.2S7 22 8.7 22s1.6-1.2 3.3-1.2 1.6 1.2 3.3 1.2 1.7-1.2 3.4-1.2S20.3 22 22 22M8 15V5a2 2 0 0 1 4 0M16 15V5a2 2 0 0 0-4 0M8 9h8"/></symbol>
+  <symbol id="i-paver" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 3h8v5H3zM13 3h8v5h-8zM3 10h5v5H3zM10 10h11v5H10zM3 17h11v4H3zM16 17h5v4h-5z"/></symbol>
+  <symbol id="i-gutter" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 7h20v3a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3zM18 13v8M15 21h6"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 20l3-10h12l3 10zM9 10l-1 10M15 10l1 10M4.5 15h15M12 2v3M5 5l1.5 1.5M19 5l-1.5 1.5"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5s-7 7.6-7 12.5a7 7 0 0 0 14 0c0-4.9-7-12.5-7-12.5z"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l1.8 5.6L19.5 9.5l-5.7 1.9L12 17l-1.8-5.6L4.5 9.5l5.7-1.9zM19 14l.9 2.6 2.6.9-2.6.9L19 21l-.9-2.6-2.6-.9 2.6-.9zM5 15l.7 2 2 .7-2 .7L5 20.4l-.7-2-2-.7 2-.7z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-lr" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5" fill="currentColor"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M8.5 14L7 22l5-3 5 3-1.5-8"/></symbol>
+  <symbol id="i-family" viewBox="0 0 24 24"><circle cx="8" cy="7" r="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="9" r="2.3" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M2.5 20c0-3.3 2.5-6 5.5-6s5.5 2.7 5.5 6M14 20c0-2.6 1.4-4.6 3-4.6s3 2 3 4.6"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V9c0-.6.4-1 1-1z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+</svg>
+
+<!-- Top bar -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left">
+      <span><svg><use href="#i-shield"/></svg>Licensed &amp; Insured</span>
+      <span><svg><use href="#i-pin"/></svg>Orlando · Kissimmee · Sanford</span>
+      <span><svg><use href="#i-family"/></svg>Family Owned &amp; Operated</span>
+    </div>
+    <div>Call or text <a href="tel:+13213559521">(321) 355-9521</a></div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Magic Touch Pressure Washing home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path fill="#fff" d="M12 2.5s-7 7.6-7 12.5a7 7 0 0 0 14 0c0-4.9-7-12.5-7-12.5z" opacity=".95"/><path fill="#1a8cff" d="M12 9l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/></svg>
+      </span>
+      <span class="brand-text"><b>Magic Touch</b><small>Pressure Washing</small></span>
+    </a>
+    <ul class="menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#areas">Service Areas</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+13213559521"><small>Call or text</small><b>(321) 355-9521</b></a>
+      <a class="btn btn-primary" href="#quote">Free Estimate</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mmenu" aria-label="Mobile">
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#areas">Service Areas</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn btn-primary" href="#quote">Get My Free Estimate</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="rating-pill"><span class="stars" aria-label="5 star rated"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>5-Star Rated in Orlando</span>
+      <h1>Orlando's Exterior Cleaning Pros. <span class="glow">Like New, Like Magic.</span></h1>
+      <p class="lead">Roof soft washing, house washing and concrete cleaning for homes across Orlando, Kissimmee and Sanford. We remove the mold, mildew, algae and grime and bring back the curb appeal you paid for.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#quote">Get My Free Estimate <svg><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="tel:+13213559521"><svg><use href="#i-phone"/></svg>(321) 355-9521</a>
+      </div>
+      <ul class="hero-checks">
+        <li><svg><use href="#i-check-c"/></svg>Licensed &amp; insured</li>
+        <li><svg><use href="#i-check-c"/></svg>Flat-rate pricing</li>
+        <li><svg><use href="#i-check-c"/></svg>On-time guarantee</li>
+        <li><svg><use href="#i-check-c"/></svg>1-year guarantee</li>
+      </ul>
+    </div>
+
+    <div class="ba-card">
+      <div class="ba" id="ba" style="--pos:50%">
+        <div class="ba-layer ba-clean"></div>
+        <div class="ba-layer ba-dirty"></div>
+        <span class="ba-tag before">Before</span>
+        <span class="ba-tag after">After</span>
+        <div class="ba-handle"><span><svg><use href="#i-lr"/></svg></span></div>
+        <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after cleaning">
+      </div>
+      <div class="ba-caption"><span><b>Drag the slider</b> to see the Magic Touch</span><span>Concrete · Pavers · Roofs</span></div>
+      <div class="float-badge">
+        <span class="ic"><svg><use href="#i-shield"/></svg></span>
+        <span><b>1-Year Guarantee</b><small>On our cleaning work</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<section class="trust" aria-label="Why homeowners choose us">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><span class="ic"><svg><use href="#i-shield"/></svg></span><span><b>Licensed &amp; Insured</b><small>Fully protected, every job</small></span></div>
+    <div class="trust-item"><span class="ic"><svg><use href="#i-tag"/></svg></span><span><b>Flat-Rate Pricing</b><small>No surprises on the invoice</small></span></div>
+    <div class="trust-item"><span class="ic"><svg><use href="#i-clock"/></svg></span><span><b>On-Time Guarantee</b><small>We show up when we say</small></span></div>
+    <div class="trust-item"><span class="ic"><svg><use href="#i-family"/></svg></span><span><b>Family Owned</b><small>Local to Central Florida</small></span></div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2>Every surface, cleaned the right way.</h2>
+      <p>High pressure where concrete needs it. Low-pressure soft washing where roofs, siding and screens need care. The right method keeps every surface safe.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal" style="--g:linear-gradient(140deg,#0a1a33,#1a8cff)">
+        <div class="svc-top"><span class="tag">Most Popular</span><svg><use href="#i-roof"/></svg></div>
+        <div class="svc-body">
+          <h3>Roof Soft Washing</h3>
+          <p>Black streaks on a Florida roof are algae, and it eats away at shingles and tile. Our low-pressure soft wash kills it at the root without damaging the roof.</p>
+          <ul><li><svg><use href="#i-check"/></svg>Shingle, tile &amp; metal roofs</li><li><svg><use href="#i-check"/></svg>Removes algae, mold &amp; lichen</li><li><svg><use href="#i-check"/></svg>No damaging high pressure</li></ul>
+          <a class="more" href="#quote">Get a roof quote <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="svc reveal" style="--g:linear-gradient(140deg,#10284d,#35d0ff)">
+        <div class="svc-top"><svg><use href="#i-home"/></svg></div>
+        <div class="svc-body">
+          <h3>House Washing</h3>
+          <p>A gentle soft wash for stucco, siding, fascia, soffits and screens. It removes the green film, dirt and cobwebs and leaves your home looking freshly painted.</p>
+          <ul><li><svg><use href="#i-check"/></svg>Stucco, vinyl, brick &amp; wood</li><li><svg><use href="#i-check"/></svg>Fascia, soffits &amp; porch screens</li><li><svg><use href="#i-check"/></svg>Safe for plants &amp; pets</li></ul>
+          <a class="more" href="#quote">Get a house wash quote <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="svc reveal" style="--g:linear-gradient(140deg,#1a8cff,#0a1a33)">
+        <div class="svc-top"><svg><use href="#i-drive"/></svg></div>
+        <div class="svc-body">
+          <h3>Driveways &amp; Sidewalks</h3>
+          <p>Surface-cleaner pressure washing that lifts years of dirt, mildew, rust and tire marks for even, stripe-free concrete.</p>
+          <ul><li><svg><use href="#i-check"/></svg>Driveways, walkways &amp; curbs</li><li><svg><use href="#i-check"/></svg>Carports &amp; garage floors</li><li><svg><use href="#i-check"/></svg>Even, stripe-free finish</li></ul>
+          <a class="more" href="#quote">Get a concrete quote <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="svc reveal" style="--g:linear-gradient(140deg,#35d0ff,#10284d)">
+        <div class="svc-top"><svg><use href="#i-pool"/></svg></div>
+        <div class="svc-body">
+          <h3>Patio &amp; Pool Decks</h3>
+          <p>Slippery black mildew on pool decks and lanais is a safety hazard. We clean it up so your outdoor space is ready for the weekend.</p>
+          <ul><li><svg><use href="#i-check"/></svg>Pool decks &amp; lanais</li><li><svg><use href="#i-check"/></svg>Patios, porches &amp; steps</li><li><svg><use href="#i-check"/></svg>Pool cage &amp; screen enclosures</li></ul>
+          <a class="more" href="#quote">Get a patio quote <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="svc reveal" style="--g:linear-gradient(140deg,#0a1a33,#35d0ff)">
+        <div class="svc-top"><svg><use href="#i-paver"/></svg></div>
+        <div class="svc-body">
+          <h3>Paver Cleaning &amp; Sealing</h3>
+          <p>We deep clean, re-sand and seal pavers to lock the joints, block weeds and bring back rich color that lasts.</p>
+          <ul><li><svg><use href="#i-check"/></svg>Deep clean &amp; re-sand</li><li><svg><use href="#i-check"/></svg>Protective sealer</li><li><svg><use href="#i-check"/></svg>Richer, longer-lasting color</li></ul>
+          <a class="more" href="#quote">Get a sealing quote <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="svc reveal" style="--g:linear-gradient(140deg,#10284d,#1a8cff)">
+        <div class="svc-top"><svg><use href="#i-gutter"/></svg></div>
+        <div class="svc-body">
+          <h3>Gutters &amp; Solar Panels</h3>
+          <p>Clogged gutters overflow into your fascia and foundation, and dirty solar panels lose output. We clear gutters, brighten them and wash your panels.</p>
+          <ul><li><svg><use href="#i-check"/></svg>Gutter clean-out &amp; brightening</li><li><svg><use href="#i-check"/></svg>Solar panel washing</li><li><svg><use href="#i-check"/></svg>Shed &amp; patio roofs</li></ul>
+          <a class="more" href="#quote">Get a quote <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="sec" id="why" style="padding-top:0">
+  <div class="wrap split">
+    <div class="why-visual reveal">
+      <div class="drops" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="big-num">5★</div>
+      <p>Five-star rated by Central Florida homeowners who keep calling us back.</p>
+      <div class="why-stats">
+        <div><b>Since 2020</b><small>Serving Central Florida</small></div>
+        <div><b>1-Year</b><small>Service guarantee</small></div>
+        <div><b>Free</b><small>On-site estimates</small></div>
+        <div><b>Flat</b><small>Rate pricing</small></div>
+      </div>
+    </div>
+    <div>
+      <div class="sec-head reveal" style="margin-bottom:32px">
+        <span class="eyebrow">Why Magic Touch</span>
+        <h2>The contractor your neighbors keep recommending.</h2>
+        <p>We treat your home like it's ours: we show up on time, work carefully around your property and don't leave until it looks right.</p>
+      </div>
+      <div class="feat-list">
+        <div class="feat reveal"><span class="ic"><svg><use href="#i-drop"/></svg></span><div><h3>The right pressure for every surface</h3><p>Soft wash for roofs and siding, surface cleaners for concrete. That means no etching, no stripes and no damaged shingles.</p></div></div>
+        <div class="feat reveal"><span class="ic"><svg><use href="#i-tag"/></svg></span><div><h3>Flat-rate, up-front pricing</h3><p>You get one clear price before we start. No hourly meter and no surprise add-ons.</p></div></div>
+        <div class="feat reveal"><span class="ic"><svg><use href="#i-clock"/></svg></span><div><h3>On-time guarantee</h3><p>Your time matters. We confirm your appointment and show up when we say we will.</p></div></div>
+        <div class="feat reveal"><span class="ic"><svg><use href="#i-award"/></svg></span><div><h3>Backed by a 1-year guarantee</h3><p>We stand behind our work. If something isn't right, we come back and make it right.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="sec process">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">How It Works</span>
+      <h2>Spotless in three simple steps.</h2>
+      <p>From first call to final walkthrough, we make it easy.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Request your free estimate</h3><p>Call, text or fill out the form. Tell us what needs cleaning and we'll get back to you fast with a flat-rate price.</p></div>
+      <div class="step reveal"><h3>We clean it the right way</h3><p>Our crew arrives on time, protects your plants and property, and uses the correct method for every surface.</p></div>
+      <div class="step reveal"><h3>Walkthrough &amp; guarantee</h3><p>We walk the job with you before we leave. Your cleaning is backed by our 1-year guarantee.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Owner -->
+<section class="sec" id="about">
+  <div class="wrap split">
+    <div class="owner-card reveal">
+      <div class="owner-photo">
+        <div class="ph"><svg><use href="#i-user"/></svg>Photo of Trevean &amp; the crew</div>
+      </div>
+      <div class="owner-sig">
+        <span><b>Trevean McLeod</b><small>Owner, Magic Touch Pressure Washing</small></span>
+        <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+      </div>
+    </div>
+    <div class="body-copy">
+      <div class="sec-head reveal" style="margin-bottom:22px">
+        <span class="eyebrow">Meet the Owner</span>
+        <h2>Local, family owned and hands-on.</h2>
+      </div>
+      <p class="quote-block reveal">Every property gets the same care we'd give our own home. That's the Magic Touch.</p>
+      <p class="reveal">Magic Touch Pressure Washing is a family-owned business serving Orlando and Central Florida since 2020. Owner Trevean McLeod answers the phone himself and treats every driveway, roof and pool deck like it's his own.</p>
+      <p class="reveal">Florida's heat and humidity are hard on a home's exterior. Mold, mildew and roof algae come back fast. We clean it the right way so it stays cleaner, longer.</p>
+      <div class="pill-row reveal">
+        <span class="pill"><svg><use href="#i-shield"/></svg>Licensed &amp; insured</span>
+        <span class="pill"><svg><use href="#i-home"/></svg>Residential</span>
+        <span class="pill"><svg><use href="#i-sparkle"/></svg>Free estimates</span>
+      </div>
+      <a class="btn btn-dark reveal" href="#quote">Talk to Trevean <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<!-- NOTE: review cards summarise public feedback on Angi/HomeAdvisor. Swap in verbatim Google reviews with names before launch. -->
+<section class="sec reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Customer Reviews</span>
+      <h2>Central Florida homeowners love the results.</h2>
+      <p>Here's what customers say after we leave.</p>
+    </div>
+    <div class="rev-grid">
+      <figure class="rev reveal" style="margin:0">
+        <span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <blockquote>Exceptionally professional and careful around our property. Probably one of the nicest, best-performing contractors we've worked with in 50 years.</blockquote>
+        <footer><span class="av">H</span><span><b>Verified Homeowner</b>Orlando, FL</span></footer>
+      </figure>
+      <figure class="rev reveal" style="margin:0">
+        <span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <blockquote>They showed up early, were professional and did an amazing job. The roof looks like new.</blockquote>
+        <footer><span class="av">R</span><span><b>Roof Cleaning Customer</b>Central Florida</span></footer>
+      </figure>
+      <figure class="rev reveal" style="margin:0">
+        <span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <blockquote>We hired them for solar panels and they went beyond expectations, also cleaning the house roof, shed roof, patio roof and gutters.</blockquote>
+        <footer><span class="av">S</span><span><b>Solar Panel Customer</b>Central Florida</span></footer>
+      </figure>
+    </div>
+    <div class="rev-summary reveal">
+      <b>5.0</b>
+      <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+      <span>Five-star rated by homeowners across Central Florida</span>
+      <a class="btn btn-primary" href="#quote">Join Our Happy Customers</a>
+    </div>
+  </div>
+</section>
+
+<!-- Service areas -->
+<section class="sec" id="areas">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Service Areas</span>
+      <h2>Proudly serving Central Florida.</h2>
+      <p>Based in Orlando and serving homes across the metro. Don't see your city? Call us, we probably cover it.</p>
+    </div>
+    <div class="areas-grid">
+      <div class="area-cards reveal">
+        <div class="area main"><svg><use href="#i-pin"/></svg><span>Orlando<small>Home base &amp; all surrounding neighborhoods</small></span></div>
+        <div class="area"><svg><use href="#i-pin"/></svg><span>Kissimmee<small>Osceola County</small></span></div>
+        <div class="area"><svg><use href="#i-pin"/></svg><span>Sanford<small>Seminole County</small></span></div>
+        <div class="area"><svg><use href="#i-pin"/></svg><span>Winter Park<small>Orange County</small></span></div>
+        <div class="area"><svg><use href="#i-pin"/></svg><span>Winter Garden<small>West Orange</small></span></div>
+        <div class="area"><svg><use href="#i-pin"/></svg><span>Apopka<small>Northwest Orange</small></span></div>
+        <div class="area"><svg><use href="#i-pin"/></svg><span>Oviedo<small>Seminole County</small></span></div>
+      </div>
+      <div class="map-card reveal" aria-hidden="false">
+        <svg viewBox="0 0 400 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><radialGradient id="rg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#1a8cff" stop-opacity=".35"/><stop offset="1" stop-color="#1a8cff" stop-opacity="0"/></radialGradient></defs>
+          <g stroke="#b3cff0" stroke-width="1.2" fill="none" opacity=".9">
+            <path d="M0 60 Q120 40 200 90 T400 70"/><path d="M0 140 Q140 120 220 170 T400 150"/><path d="M0 230 Q100 210 210 250 T400 240"/>
+            <path d="M80 0 Q70 120 120 200 T100 340"/><path d="M200 0 Q230 110 200 200 T240 340"/><path d="M320 0 Q300 140 330 220 T310 340"/>
+          </g>
+          <ellipse cx="300" cy="120" rx="34" ry="20" fill="#bfe3ff"/><ellipse cx="90" cy="250" rx="26" ry="15" fill="#bfe3ff"/><ellipse cx="240" cy="270" rx="18" ry="10" fill="#bfe3ff"/>
+          <circle cx="200" cy="150" r="130" fill="url(#rg)"/>
+          <circle cx="200" cy="150" r="90" fill="none" stroke="#1a8cff" stroke-dasharray="5 6" stroke-width="1.5" opacity=".6"/>
+          <g font-family="Inter,sans-serif" font-weight="700" font-size="11" fill="#0a1a33">
+            <circle cx="200" cy="150" r="7" fill="#1a8cff" stroke="#fff" stroke-width="3"/><text x="212" y="154">Orlando</text>
+            <circle cx="240" cy="60" r="5" fill="#0a1a33"/><text x="250" y="64">Sanford</text>
+            <circle cx="215" cy="238" r="5" fill="#0a1a33"/><text x="225" y="242">Kissimmee</text>
+            <circle cx="222" cy="118" r="4" fill="#10284d"/><text x="230" y="112" font-size="10" fill="#10284d">Winter Park</text>
+            <circle cx="120" cy="150" r="4" fill="#10284d"/><text x="58" y="146" font-size="10" fill="#10284d">Winter Garden</text>
+            <circle cx="150" cy="95" r="4" fill="#10284d"/><text x="108" y="88" font-size="10" fill="#10284d">Apopka</text>
+            <circle cx="290" cy="110" r="4" fill="#10284d"/><text x="298" y="102" font-size="10" fill="#10284d">Oviedo</text>
+          </g>
+        </svg>
+        <div class="label"><span><b>Orlando &amp; Central Florida</b><small>Free on-site estimates</small></span><a href="tel:+13213559521">Check my area →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq" style="padding-top:0">
+  <div class="wrap faq-wrap">
+    <div class="faq-aside reveal">
+      <span class="eyebrow">Still have questions?</span>
+      <h3>Talk to a real person.</h3>
+      <p>Call or text Trevean directly for a fast answer and a free, no-pressure estimate.</p>
+      <a class="btn btn-primary" href="tel:+13213559521"><svg><use href="#i-phone"/></svg>(321) 355-9521</a>
+      <a class="btn btn-ghost" href="sms:+13213559521"><svg><use href="#i-msg"/></svg>Send a Text</a>
+    </div>
+    <div>
+      <div class="sec-head reveal" style="margin-bottom:28px">
+        <span class="eyebrow">FAQ</span>
+        <h2>Frequently asked questions.</h2>
+      </div>
+      <div class="faq reveal">
+        <details open><summary>Will pressure washing damage my roof?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary><p>Not the way we do it. Roofs are never blasted with high pressure. We use a low-pressure soft wash that kills algae, mold and lichen at the root and is safe for shingle, tile and metal roofs.</p></details>
+        <details><summary>What's the difference between soft washing and pressure washing?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary><p>Pressure washing uses high-pressure water and is ideal for hard surfaces like concrete driveways and sidewalks. Soft washing uses low pressure plus cleaning solutions to safely clean roofs, stucco, siding and screens.</p></details>
+        <details><summary>Is it safe for my plants, pets and pool?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary><p>Yes. We take care to protect your landscaping and sensitive areas, and we ask that pets stay inside while we work. We'll walk you through everything before we start.</p></details>
+        <details><summary>Do I need to be home?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary><p>Usually not. As long as we can reach an outdoor water spigot and the areas being cleaned, we can take care of everything. Just let us know when you book.</p></details>
+        <details><summary>How often should I clean my home's exterior?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary><p>In Central Florida's humidity, most homeowners wash their house and concrete once a year and soft wash their roof every 1 to 3 years, depending on shade and buildup.</p></details>
+        <details><summary>How much does it cost?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary><p>Every property is different, so we give you a free, flat-rate estimate up front. There's no hourly billing and no surprise charges. Call or text (321) 355-9521 or use the form below.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quote -->
+<section class="sec quote" id="quote">
+  <div class="wrap quote-grid">
+    <div>
+      <div class="sec-head reveal" style="margin-bottom:0">
+        <span class="eyebrow">Free Estimate</span>
+        <h2>Get your free, flat-rate quote.</h2>
+        <p>Tell us what you'd like cleaned and we'll get back to you fast. Prefer to talk? Call or text anytime.</p>
+      </div>
+      <div class="contact-list reveal">
+        <a href="tel:+13213559521"><span class="ic"><svg><use href="#i-phone"/></svg></span><span><small>Call or Text</small><b>(321) 355-9521</b></span></a>
+        <a href="mailto:Magictouchpw7@gmail.com"><span class="ic"><svg><use href="#i-mail"/></svg></span><span><small>Email</small><b>Magictouchpw7@gmail.com</b></span></a>
+        <div><span class="ic"><svg><use href="#i-pin"/></svg></span><span><small>Serving</small><b>Orlando, Kissimmee, Sanford &amp; Central FL</b></span></div>
+      </div>
+    </div>
+    <form class="qf reveal" id="qf" novalidate>
+      <h3>Request an estimate</h3>
+      <p class="sub">Takes 30 seconds. No obligation.</p>
+      <label>Full name<input name="name" autocomplete="name" required></label>
+      <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+      <label class="full">Property address or ZIP<input name="address" autocomplete="street-address"></label>
+      <div class="full" role="group" aria-labelledby="svc-lbl">
+        <label id="svc-lbl" style="margin-bottom:9px">What needs cleaning?</label>
+        <div class="chips">
+          <label><input type="checkbox" name="svc" value="Roof"><span>Roof</span></label>
+          <label><input type="checkbox" name="svc" value="House wash"><span>House wash</span></label>
+          <label><input type="checkbox" name="svc" value="Driveway / sidewalks"><span>Driveway / sidewalks</span></label>
+          <label><input type="checkbox" name="svc" value="Patio / pool deck"><span>Patio / pool deck</span></label>
+          <label><input type="checkbox" name="svc" value="Paver sealing"><span>Paver sealing</span></label>
+          <label><input type="checkbox" name="svc" value="Gutters"><span>Gutters</span></label>
+          <label><input type="checkbox" name="svc" value="Solar panels"><span>Solar panels</span></label>
+          <label><input type="checkbox" name="svc" value="Other"><span>Other</span></label>
+        </div>
+      </div>
+      <label class="full">Anything else we should know?<textarea name="notes" placeholder="Approximate size, stains, timing, etc."></textarea></label>
+      <div class="qf-done" id="qf-done" role="status">Thanks! Your email app should now be open with your request ready to send. You can also call or text (321) 355-9521.</div>
+      <button class="btn btn-primary" type="submit">Send My Free Estimate Request <svg><use href="#i-arrow"/></svg></button>
+      <p class="fine">Licensed &amp; insured · Flat-rate pricing · 1-year guarantee</p>
+    </form>
+  </div>
+</section>
+
+<!-- CTA band -->
+<section class="cta-band">
+  <div class="wrap">
+    <div>
+      <h2>Ready to see the Magic Touch on your home?</h2>
+      <p>Free estimates across Orlando, Kissimmee &amp; Sanford.</p>
+    </div>
+    <div class="btns">
+      <a class="btn btn-white" href="tel:+13213559521"><svg><use href="#i-phone"/></svg>(321) 355-9521</a>
+      <a class="btn btn-ghost" href="#quote">Get a Free Estimate</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#fff" d="M12 2.5s-7 7.6-7 12.5a7 7 0 0 0 14 0c0-4.9-7-12.5-7-12.5z" opacity=".95"/><path fill="#1a8cff" d="M12 9l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/></svg></span>
+        <span class="brand-text"><b>Magic Touch</b><small>Pressure Washing</small></span>
+      </a>
+      <p>Family-owned roof, house and concrete cleaning in Orlando, Kissimmee, Sanford and across Central Florida. Licensed &amp; insured.</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/p/Magic-Touch-Pressure-Washing-100075876025896/" aria-label="Facebook" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg></a>
+        <a href="https://www.instagram.com/magictouchpw_/" aria-label="Instagram" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Roof Soft Washing</a></li>
+        <li><a href="#services">House Washing</a></li>
+        <li><a href="#services">Driveways &amp; Sidewalks</a></li>
+        <li><a href="#services">Patio &amp; Pool Decks</a></li>
+        <li><a href="#services">Paver Sealing</a></li>
+        <li><a href="#services">Gutters &amp; Solar Panels</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Service Areas</h4>
+      <ul>
+        <li><a href="#areas">Orlando</a></li>
+        <li><a href="#areas">Kissimmee</a></li>
+        <li><a href="#areas">Sanford</a></li>
+        <li><a href="#areas">Winter Park</a></li>
+        <li><a href="#areas">Winter Garden</a></li>
+        <li><a href="#areas">Apopka &amp; Oviedo</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+13213559521">(321) 355-9521</a></li>
+        <li><a href="sms:+13213559521">Text us</a></li>
+        <li><a href="mailto:Magictouchpw7@gmail.com">Magictouchpw7@gmail.com</a></li>
+        <li>Orlando, Florida</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© <span id="yr">2026</span> Magic Touch Pressure Washing LLC. All rights reserved.</span>
+    <span>Website by <a href="https://www.a1amarketingco.com/" style="color:#fff;text-decoration:none">A1A Marketing &amp; Consulting Co.</a></span>
+  </div>
+</footer>
+
+<!-- Mobile call bar -->
+<div class="mbar">
+  <a class="btn btn-dark" href="tel:+13213559521"><svg><use href="#i-phone"/></svg>Call</a>
+  <a class="btn btn-primary" href="#quote">Free Estimate</a>
+</div>
+
+<script>
+(function(){
+  // Before / after slider
+  var ba=document.getElementById('ba');
+  if(ba){var r=ba.querySelector('input');var set=function(){ba.style.setProperty('--pos',r.value+'%')};r.addEventListener('input',set);set();}
+
+  // Mobile menu
+  var b=document.querySelector('.burger'),m=document.getElementById('mmenu');
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');b.setAttribute('aria-expanded','false')})});
+
+  // Reveal on scroll
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  // Quote form -> pre-filled email
+  var f=document.getElementById('qf');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var E=f.elements,name=E['name'].value.trim(),phone=E['phone'].value.trim();
+    if(!name){E['name'].focus();E['name'].style.borderColor='#e5484d';return}
+    if(!phone){E['phone'].focus();E['phone'].style.borderColor='#e5484d';return}
+    var svcs=[].slice.call(f.querySelectorAll('input[name=svc]:checked')).map(function(i){return i.value}).join(', ')||'Not specified';
+    var body='Name: '+name+'\nPhone: '+phone+'\nAddress/ZIP: '+E['address'].value.trim()+'\nServices: '+svcs+'\n\nNotes: '+E['notes'].value.trim();
+    window.location.href='mailto:Magictouchpw7@gmail.com?subject='+encodeURIComponent('Free Estimate Request - '+name)+'&body='+encodeURIComponent(body);
+    document.getElementById('qf-done').style.display='block';
+  });
+  ['name','phone'].forEach(function(n){f.elements[n].addEventListener('input',function(){this.style.borderColor=''})});
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
